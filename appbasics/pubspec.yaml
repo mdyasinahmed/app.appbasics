@@ -24,3 +24,6 @@ flutter:
   assets:
     - assets/logo.png
     - assets/becoder.png
+    - assets/google.png
+    - assets/apple.png
+    - assets/facebook.png

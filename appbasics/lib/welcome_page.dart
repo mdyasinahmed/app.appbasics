@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'login_page.dart';
+import 'login_page.dart';
 import 'dart:async';
 
 class WelcomePage extends StatefulWidget {
@@ -12,9 +12,9 @@ class _WelcomePageState extends State<WelcomePage> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 5), () {
-      // Navigator.of(context).pushReplacement(
-      //   MaterialPageRoute(builder: (context) => LoginPage()),
-      // );
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => LoginPage()),
+      );
     });
   }
 
@@ -36,14 +36,14 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
             Spacer(flex: 3),
             Padding(
-              padding: const EdgeInsets.only(bottom: 20.0),
+              padding: const EdgeInsets.only(bottom: 20),
               child: Column(
                 children: [
                   Text(
                     'POWERED BY',
                     style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 5),
+                  SizedBox(height: 5),  // Reduced the height here
                   SizedBox(
                     width: 100,
                     height: 80,
@@ -51,7 +51,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   ),
                   SizedBox(height: 10),
                   Text(
-                    '©2024 uniKernel',
+                    '©2024 appbasics',
                     style: TextStyle(color: Colors.grey),
                   ),
                 ],
