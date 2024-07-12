@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'sign_up_page.dart';
-// import 'forgot_password_page.dart'; // Import the Forgot Password page
+import 'forgot_password_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -92,10 +92,10 @@ class _LoginPageState extends State<LoginPage> {
                 alignment: Alignment.center,
                 child: GestureDetector(
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => ForgotPasswordPage()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ForgotPasswordPage()),
+                    );
                   },
                   child: Text(
                     'Forgot Password?',
