@@ -25,8 +25,8 @@ class _SignUpPageState extends State<SignUpPage> {
             children: [
               SizedBox(height: 80),
               SizedBox(
-                width: 180,
-                height: 180,
+                width: 200,
+                height: 200,
                 child: Image.asset('assets/logo.png'), // Use the logo image
               ),
               SizedBox(height: 20),

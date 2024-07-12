@@ -22,13 +22,13 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               SizedBox(height: 80),
               SizedBox(
-                width: 180,
-                height: 180,
+                width: 200,
+                height: 200,
                 child: Image.asset('assets/logo.png'),
               ),
               SizedBox(height: 20),
               Text(
-                'Welcome Back',
+                'Welcome Back!',
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
@@ -89,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 10),
               Align(
-                alignment: Alignment.centerLeft,
+                alignment: Alignment.center,
                 child: GestureDetector(
                   onTap: () {
                     // Navigator.push(
